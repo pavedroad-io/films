@@ -11,7 +11,7 @@ community:
   - {name: SECURITY.md, path: ., src: templatedir}
   - {name: ROADMAP.md, path: ., src: 'https://w.pavedroad.io/templates/roadmap.md'}
   description: list of community files to include
-info: {api-version: 1.0.0, id: datamgr, name: films, organization: acme, release-status: alpha,
+info: {api-version: 1.0.0, id: datamgr, name: films, organization: acme-demo, release-status: alpha,
   version: 1.0.0}
 project:
   dependencies:
@@ -36,35 +36,31 @@ project:
   description: Manage database of films
   integrations:
   - badges:
-    - {enable: true, link: '<img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fpavedroad-io%2Fkevlar-web.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fpavedroad-io%2Fkevlar-web?ref=badge_shield">',
+    - {enable: true, link: '<img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Facme-demo%2Ffilms.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Facme-demo%2Ffilms?ref=badge_shield">',
       name: FOSSA}
     name: fossa
   - sonar-cloud-config:
-      key: "pavedroad-io_users"
+      key: "PavedRoad_films"
       login: "3faaf04fd0f66a33ced5dea109847fa3dc6d40a4"
       options:
         badges:
-        - {enable: true, link: '<img src="https://sonarcloud.io/api/project_badges/measure?project=pavedroad-io_kevlar-web&metric=alert_status">',
+        - {enable: true, link: '<img src="https://sonarcloud.io/api/project_badges/measure?project=acme-demo_films&metric=alert_status">',
           name: Alert status}
-        - {enable: true, link: '<img src="https://sonarcloud.io/api/project_badges/measure?project=pavedroad-io_kevlar-web&metric=bugs">',
+        - {enable: true, link: '<img src="https://sonarcloud.io/api/project_badges/measure?project=acme-demo_films&metric=bugs">',
           name: bugs}
-        - {enable: true, link: '<a href="https://sonarcloud.io/api/project_badges/measure?project=pavedroad-io_kevlar-web&metric=complexity">Complexity</a>',
-          name: Complexity}
-        - {enable: true, link: '<a href="https://sonarcloud.io/api/project_badges/measure?project=pavedroad-io_kevlar-web&metric=cognitive_complexity">Cognitive Complexity</a>',
-          name: Cognitive complexity}
-        - {enable: true, link: '<img src="https://sonarcloud.io/api/project_badges/measure?project=pavedroad-io_kevlar-web&metric=code_smells">',
+        - {enable: true, link: '<img src="https://sonarcloud.io/api/project_badges/measure?project=acme-demo_films&metric=code_smells">',
           name: Code smells}
-        - {enable: true, link: '<img src="https://sonarcloud.io/api/project_badges/measure?project=pavedroad-io_kevlar-web&metric=coverage">',
+        - {enable: true, link: '<img src="https://sonarcloud.io/api/project_badges/measure?project=acme-demo_films&metric=coverage">',
           name: Coverage}
-        - {enable: true, link: '<img src="https://sonarcloud.io/api/project_badges/measure?project=pavedroad-io_kevlar-web&metric=ncloc">',
+        - {enable: true, link: '<img src="https://sonarcloud.io/api/project_badges/measure?project=acme-demo_films&metric=ncloc">',
           name: Lines of code}
-        - {enable: true, link: '<img src="https://sonarcloud.io/api/project_badges/measure?project=pavedroad-io_kevlar-web&metric=duplicated_lines_density">',
+        - {enable: true, link: '<img src="https://sonarcloud.io/api/project_badges/measure?project=acme-demo_films&metric=duplicated_lines_density">',
           name: Duplicate line desnity}
-        - {enable: true, link: '<img src="https://sonarcloud.io/api/project_badges/measure?project=pavedroad-io_kevlar-web&metric=security">',
+        - {enable: true, link: '<img src="https://sonarcloud.io/api/project_badges/measure?project=acme-demo_films&metric=security_rating">',
           name: Security}
-        - {enable: true, link: '<img src="https://sonarcloud.io/api/project_badges/measure?project=pavedroad-io_kevlar-web&metric=sqale_index">',
+        - {enable: true, link: '<img src="https://sonarcloud.io/api/project_badges/measure?project=acme-demo_films&metric=sqale_index">',
           name: Time to fix technical debt}
-        - {enable: true, link: '<img src="https://sonarcloud.io/api/project_badges/measure?project=pavedroad-io_kevlar-web&metric=vulnerabilities">',
+        - {enable: true, link: '<img src="https://sonarcloud.io/api/project_badges/measure?project=acme-demo_films&metric=vulnerabilities">',
           name: Vulnerabilities}
         coverage: {enable: true, report: $ref->go.coverage.artifacts}
         go-sec: {enable: true, report: $ref->go.sec.artifacts}
